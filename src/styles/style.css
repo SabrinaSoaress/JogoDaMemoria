@@ -16,8 +16,8 @@ body {
     gap: 30px;
     background: linear-gradient(
         325deg, 
-        #032e01, 
-        #09c064
+        #ad8c1d, 
+        #cf2256
     );
 }
 h2 {
@@ -26,24 +26,10 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.1em ;
 }
-.reset{
-    padding: 15px 20px;
-    width: 100%;
-    color: #032e01;
-    background-color: #fff;
-    border: none;
-    font-size: 1.5em;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 600;
-}
-.reset:focus {
-    color: #7a1831;
-    background-color: #44a173;
+p {
+    color: #ad8c1d;
 }
 .game {
-    border: #7a1831 solid 4px;
     width: 430px;
     height: 430px;
     display: flex;
@@ -84,3 +70,38 @@ h2 {
 .boxMatch::after {
     transform: rotateY(180deg);
 }
+
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 1px solid #f5c6cb;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .alert-box button {
+    background-color: #721c24;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .alert-box button:hover {
+    background-color: #d19a23;
+  }
